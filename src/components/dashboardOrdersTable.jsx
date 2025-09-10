@@ -31,7 +31,6 @@ const statusItems = [
 ];
 const DashboardOrdersTable = () => {
   const {isOnline} = useSelector(selectNetwork)
-    console.log(isOnline);
   const [open, setOpen] = useState(false)
   const [detailsOpen, setDetailsOpen] = useState(false)
   const [selectedOrder, setSelectedOrder] = useState(null)
@@ -69,7 +68,7 @@ const DashboardOrdersTable = () => {
       },
     }).unwrap();
 
-    console.log('✅ Product updated successfully');
+    console.log('✅ order updated successfully');
 
     setOpen(false);
   };
