@@ -13,7 +13,7 @@ export const ordersApiSlice = createApi({
       query: (arg) => {
         const { page } = arg;
         return {
-          url: `http://localhost:1337/api/orders?pagination[page]=${page}&pagination[pageSize]=7`,
+          url: `/api/orders?pagination[page]=${page}&pagination[pageSize]=7`,
         };
       },
       providesTags: (result) =>
