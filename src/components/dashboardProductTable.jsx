@@ -158,7 +158,6 @@ const DashboardProductTable = () => {
     console.log("Thumbnail changed:", e.target.files[0]);
     setThumbnail( e.target.files[0]);
   };
-  console.log(resdAta)
   const onSubmitHandler = async (e) => {
     // e.preventDefault();
 
@@ -221,7 +220,6 @@ const DashboardProductTable = () => {
         },
       }).unwrap();
 
-      console.log('✅ Product updated successfully');
       console.log(selectedProductToEdit)
     } catch (err) {
       console.error('❌ Update failed:', err);
@@ -360,7 +358,6 @@ const DashboardProductTable = () => {
               name="price"
               onChange={(e) => {
                 onChangePriceHandler(e);
-                console.log(+(e.target.value) || 0);
               }}
               value={selectedProductToEdit?.price} step={1}
               // formatOptions={{
@@ -379,7 +376,6 @@ const DashboardProductTable = () => {
               name="stock"
               onChange={(e) => {
                 onChangeStockHandler(e);
-                console.log(+(e.target.value) || 0);
               }}
               value={selectedProductToEdit?.stock} step={1} 
             >
@@ -393,7 +389,6 @@ const DashboardProductTable = () => {
               name="discount"
               onChange={(e) => {
                 onChangeDiscountHandler(e);
-                console.log(+(e.target.value) || 0);
               }}
               value={selectedProductToEdit?.discount} step={1} 
             >
