@@ -1,10 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Loader2 } from 'lucide-react';
-// import { Product } from '../types/product';
-
 import { ProductGallery } from './ProductGallery';
 import { ProductInfo } from './ProductInfo';
-// import { ProductDetails } from './ProductDetailsAlt';
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate, useParams } from 'react-router';
 import { useColorMode } from '@/components/ui/color-mode';

@@ -18,7 +18,6 @@ import { FiMinus, FiPlus } from 'react-icons/fi';
 import { addToCart } from '@/app/features/cartSlice';
 import { useDispatch } from 'react-redux';
 import { IoMdStarOutline } from 'react-icons/io';
-import { BsQuestion } from 'react-icons/bs';
 import { RiQuestionLine } from 'react-icons/ri';
 
 const variants = [
