@@ -447,9 +447,11 @@ const Checkout = () => {
               // _disabled={{ opacity: 0.5, cursor: 'not-allowed', loading: true }}
               disabled={loading}
               loading={loading}
+              loadingText="Sending..."
+              // loading={loading}
               // onClick={handleCheckout}
             >
-              {loading ? "Sending..." : "Submit Order"}
+              {"Submit Order"}
             </Button>
           </Box>
         </Grid>
