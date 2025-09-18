@@ -444,8 +444,9 @@ const Checkout = () => {
               p={4}
               bg={ '#86df0e' }
               _hover={{ shadow: 'lg', transform: 'scale(1.02)' }}
-              _disabled={{ opacity: 0.5, cursor: 'not-allowed', loading: true }}
+              // _disabled={{ opacity: 0.5, cursor: 'not-allowed', loading: true }}
               disabled={loading}
+              loading={loading}
               // onClick={handleCheckout}
             >
               {loading ? "Sending..." : "Submit Order"}
