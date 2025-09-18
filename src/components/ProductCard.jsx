@@ -32,7 +32,7 @@ export default function ProductCard({product}) {
         <Card.Title textStyle="xl" color={'white'}>{product.title}</Card.Title>
         
         <Text textStyle="lg"  fontWeight="medium" letterSpacing="tight"  mt="2">
-          {discount > 0 &&<Span mr={'3'} color={'gray.200'} textDecoration="line-through" >{(price).toFixed(2)}LE</Span>} <Span color={'#86df0e'}>{ discountedPrice.toFixed(0) }.00 LE</Span> 
+          {discount > 0 &&<Span mr={'3'} color={'gray.400'} textDecoration="line-through" >{(price).toFixed(2)}LE</Span>} <Span color={'#86df0e'}>{ discountedPrice.toFixed(0) }.00 LE</Span> 
         </Text>
       </Card.Body>
     </Card.Root>
