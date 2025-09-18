@@ -105,7 +105,7 @@ export default function Footer() {
             <Box
               p={{md:10,base:0}}
 
-              color={'gray.700'}>
+              color={'white'}>
               <Container as={Stack} maxW={'1300px'} py={10} >
                 <SimpleGrid
                   templateColumns={{ sm: '1fr ', md: ' 1fr  2fr ' }}
