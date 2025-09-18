@@ -13,7 +13,7 @@ export default function Skelaton() {
       borderRadius={'20px'}
       mx={'auto'} 
       alignItems={'center'}
-      my={7} w="sm" maxW={'200px'}
+      my={7} w="sm" maxW={'300px'}
       bg={'gray.600'}
       padding={'12'}
        

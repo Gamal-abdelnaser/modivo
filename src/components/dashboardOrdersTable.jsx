@@ -18,7 +18,7 @@ import { CiRead } from "react-icons/ci"
 import { MdOutlineModeEdit } from "react-icons/md";
 import { RiDeleteBin5Line } from "react-icons/ri";
 import AlertDialog from "../Shared/AlertDialog";
-import { useEffect, useState } from "react";
+import {useState } from "react";
 import { useDeleteDashboardOrdersMutation, useGetDashboardOrdersQuery, useUpdateDashboardOrdersMutation } from '@/app/services/orders';
 import { selectNetwork } from '@/app/features/network';
 import { useSelector } from 'react-redux';

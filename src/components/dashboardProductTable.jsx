@@ -5,7 +5,7 @@ import { CiRead } from "react-icons/ci"
 import { MdOutlineModeEdit } from "react-icons/md";
 import { RiDeleteBin5Line } from "react-icons/ri";
 import AlertDaialog from "../Shared/AlertDialog";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import AlertDialog from "../Shared/AlertDialog";
 import CookieService from "@/services/CookieService";
 import CustomModal from "@/Shared/Modal";
