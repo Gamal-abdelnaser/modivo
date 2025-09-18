@@ -22,11 +22,11 @@ const AllProducts = () => {
         <Text textStyle={{ md: 'xl', base: 'md' }} fontWeight={'normal'} textAlign={'start'}  >Discover the summer collection from {name}</Text>
         {
           (!isOnline) ? <Flex w={'full'} alignItems={'center'} flexWrap={'wrap'} mt={20} mb={20} justifyContent={'center'}>
-          {Array.from({ length: 6 }, (_, idx) => (
-            <Skelaton key={idx} />
-          )
-          )}
-        </Flex> :<ProductsPage page={7} />
+            {Array.from({ length: 6 }, (_, idx) => (
+              <Skelaton key={idx} />
+            )
+            )}
+          </Flex> :<ProductsPage page={7} />
         }
         
       </Stack>
