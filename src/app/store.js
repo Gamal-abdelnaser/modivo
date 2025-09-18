@@ -1,6 +1,5 @@
 import { configureStore } from '@reduxjs/toolkit'
 import { persistStore, persistReducer } from "redux-persist";
-
 import storage from 'redux-persist/lib/storage' // defaults to localStorage for web
 
 import loginSlice from './features/loginSlice'
@@ -10,25 +9,21 @@ import orderReducer from './features/orderSlice'
 import { productsApiSlice } from './services/products';
 import { ordersApiSlice } from './services/orders';
 import networkSlice from './features/network';
+
 const persistCartConfig = {
   key: "cart",
   storage,
 }
-const persistOrderConfig = {
-  key: "orders",
-  storage,
-}
 
 const persistedCart = persistReducer(persistCartConfig, cartSlice)
-const persistedOrders = persistReducer(persistOrderConfig, orderReducer)
 
 export const store = configureStore({
   reducer: {
     network: networkSlice,
     global: globalSlice,
-    cart: persistedCart,
+    cart: persistedCart,   // ✅ cart يتخزن
     login: loginSlice,
-    orders: persistedOrders,
+    orders: orderReducer,  // ❌ مش متخزن
     [productsApiSlice.reducerPath]: productsApiSlice.reducer,
     [ordersApiSlice.reducerPath]: ordersApiSlice.reducer
   },

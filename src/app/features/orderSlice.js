@@ -40,7 +40,7 @@ const orderSlice = createSlice({
         state.loading = false;
         state.data = action.payload;
         state.error = null;
-        localStorage.removeItem("cartProducts");
+        localStorage.removeItem("persist:orders");
       })
       .addCase(createOrder.rejected, (state, action) => {
         state.loading = false;
