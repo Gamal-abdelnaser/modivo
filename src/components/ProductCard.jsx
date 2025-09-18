@@ -28,8 +28,8 @@ export default function ProductCard({product}) {
           objectFit={'cover'}
         />
       </Box>
-      <Card.Body px={4} py={2} color={useColorModeValue()}>
-        <Card.Title textStyle="xl" color={useColorModeValue('#333333', 'white')}>{product.title}</Card.Title>
+      <Card.Body px={4} py={2} color={'white'}>
+        <Card.Title textStyle="xl" color={'white'}>{product.title}</Card.Title>
         
         <Text textStyle="lg"  fontWeight="medium" letterSpacing="tight"  mt="2">
           {discount > 0 &&<Span mr={'3'} textDecoration="line-through" >{(price).toFixed(2)}LE</Span>} <Span color={'#86df0e'}>{ discountedPrice.toFixed(0) }.00 LE</Span> 
