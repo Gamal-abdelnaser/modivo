@@ -96,7 +96,7 @@ const DashboardOrdersTable = () => {
   // if (error) return <Text>Error loading orders</Text>  
 
   return (
-    <Box mx={'auto'} overflowX="auto" display={'flex'} minW="400px" py={2} flexDirection={'column'} justifyContent={'center'}  >
+    <Box mx={'auto'} overflowX="auto" display={'flex'} minW="300px" py={2} flexDirection={'column'} justifyContent={'center'}  >
       <Table.Root size="sm" bg={'none'} maxW={'95%'}  mx={'auto'}>
         <Table.Header bg={'none'} >
           {

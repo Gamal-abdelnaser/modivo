@@ -40,7 +40,7 @@ const SocialButton = ({
 }) => {
   return (
     <chakra.button
-      bg={useColorModeValue('blackAlpha.100', 'whiteAlpha.100')}
+      bg={'whiteAlpha.100'}
       rounded={'full'}
       w={8}
       h={8}
@@ -104,8 +104,8 @@ export default function Footer() {
           <Stack w={'full'} alignContent={'center'} maxW={'1300px'}  >
             <Box
               p={{md:10,base:0}}
-              
-              color={useColorModeValue('gray.700', 'gray.200')}>
+
+              color={'gray.700'}>
               <Container as={Stack} maxW={'1300px'} py={10} >
                 <SimpleGrid
                   templateColumns={{ sm: '1fr ', md: ' 1fr  2fr ' }}
@@ -115,7 +115,7 @@ export default function Footer() {
                   p={'10'}>
                   <Stack gap={6} >
                     <Box>
-                      <Logo color={useColorModeValue('gray.700', 'white')} />
+                      <Logo color={'white'} />
                     </Box>
                     <Text fontSize={'sm'} textAlign={'start'}>Our brand is all about modern youth fashion — bringing you the latest trends with a perfect mix of comfort and style. Every piece is designed to keep you looking fresh and feeling confident, wherever you go.</Text>
                     <Stack direction={'row'} gap={6}>

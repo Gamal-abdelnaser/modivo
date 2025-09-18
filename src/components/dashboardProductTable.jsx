@@ -253,7 +253,7 @@ const DashboardProductTable = () => {
       >
         + Create Product
       </Button>
-      <Box mx={'auto'} overflowX="auto" minW={'400px'} display={'flex'} flexDirection={'column'} alignItems={'center'} justifyContent={'center'} >
+      <Box mx={'auto'} overflowX="auto" minW={'300px'} display={'flex'} flexDirection={'column'} alignItems={'center'} justifyContent={'center'} >
         
         <Table.Root size="sm" bg={'none'} maxW={'95%'}  mx={'auto'}>
           <Table.Header bg={'none'} >
