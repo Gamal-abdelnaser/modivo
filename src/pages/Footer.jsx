@@ -2,6 +2,7 @@
 
 import {
   Box,
+  chakra,
   Container,
   SimpleGrid,
   Stack,
@@ -11,11 +12,11 @@ import {
 } from '@chakra-ui/react'
 import { ReactNode } from 'react'
 import { FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa'
-
+import { BiMailSend } from 'react-icons/bi'
 import { name } from '@/utils/util'
 import { Link } from 'react-router'
 
-const Logo = () => {
+const Logo = (props) => {
   return (
     <>
       <Text fontSize={'2xl'} fontWeight={'bold'} textAlign={'start'} color={'#86df0e'}>{name}</Text>
