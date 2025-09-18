@@ -162,7 +162,8 @@ const DashboardProductTable = () => {
     // e.preventDefault();
 
     const documentIds = selectedProductDocumentId2; // documentId للـ update
-    const id = selectedProductId2;                  // entry id للـ upload
+    const id = selectedProductId2;
+    const thumbnailId = selectedProductToEdit?.thumbnail?.id; // entry id للـ upload
     const updates = {
       title: selectedProductToEdit?.title || '',
       price: selectedProductToEdit?.price || 0,
@@ -207,7 +208,10 @@ const DashboardProductTable = () => {
             console.warn('⚠️ Failed to delete old image file:', err);
           }
         }
+      }else{
+        newFileId = selectedProductToEdit?.thumbnail?.id
       }
+
 
       // (3) Update باقي الداتا + thumbnail الجديد
       await updateProduct({
@@ -216,7 +220,8 @@ const DashboardProductTable = () => {
           data: {
             ...updates,
             // ...(newFileId ? { thumbnail: newFileId } : {}), // لو فيه صورة جديدة اربطها
-            ...(newFileId ? { thumbnail: [newFileId] } : {})          },
+            ...(newFileId ? { thumbnail: [newFileId] } : {}) },
+
         },
       }).unwrap();
 

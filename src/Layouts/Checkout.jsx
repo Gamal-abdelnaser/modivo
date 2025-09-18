@@ -214,8 +214,10 @@ const Checkout = () => {
       paymentMethod: paymentMethod,
     });
     setTouched({});
-
+    dispatch({ type: 'cart/clearCart' });
+    window.location.href = `/`; // Redirect to order confirmation page
   };
+
 
 
   cartProducts.length === 0 && (window.location.href = '/');
