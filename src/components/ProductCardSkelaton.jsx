@@ -13,9 +13,9 @@ export default function Skelaton() {
       borderRadius={'20px'}
       mx={'auto'} 
       alignItems={'center'}
-      my={7} w="sm" maxW={'sm'}
+      my={7} w="sm" maxW={'200px'}
       bg={'gray.600'}
-       padding={'12'}
+      padding={'12'}
        
     >
       <SkeletonCircle  size="20" />
